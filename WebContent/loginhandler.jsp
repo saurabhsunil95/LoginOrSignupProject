@@ -17,7 +17,7 @@
     String e = ee.toLowerCase();
     
    	 	Class.forName("com.mysql.jdbc.Driver");
-		Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/logindata", "root", "9534598529");
+		Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/logindata", "userid", "password");
 		Statement st = co.createStatement();
 		ResultSet rs = st.executeQuery("select * from data where email='"+e+"'");
 		
