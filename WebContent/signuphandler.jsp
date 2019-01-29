@@ -24,7 +24,7 @@ Connection con = null;
         String queryText = "insert into data values('"+names+"','"+eaddress+"','"+pass+"','"+ citys+"','"+mob+"','"+inf+"')";
 
  		Class.forName("com.mysql.jdbc.Driver");
- 		Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/logindata", "root", "9534598529");
+ 		Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/logindata", "userid", "password");
  		Statement st = co.createStatement();
  		int rst = st.executeUpdate(queryText);
  		//out.println("Data is saved "+rst);
